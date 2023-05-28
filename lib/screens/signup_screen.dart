@@ -421,21 +421,4 @@ class _SignUpScreenState extends State<SignUpScreen> {
 
     print('Download-Link: $urlDownload');
   }
-
-  // Future uploadFile() async {
-  //   if (file == null) return;
-
-  //   final fileName = (file!.path);
-  //   final destination = 'files/$fileName';
-
-  //   task = FirebaseApi.uploadFile(destination, file!);
-  //   setState(() {});
-
-  //   if (task == null) return;
-
-  //   final snapshot = await task!.whenComplete(() {});
-  //   final urlDownload = await snapshot.ref.getDownloadURL();
-
-  //   print('Download-Link: $urlDownload');
-  // }
 }

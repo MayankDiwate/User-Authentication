@@ -1,10 +1,7 @@
 import 'dart:io';
 
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:file_picker/file_picker.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get_connect/http/src/utils/utils.dart';
 import 'package:image_picker/image_picker.dart';
 
 TextStyle boldStyle = const TextStyle(
@@ -139,20 +136,4 @@ void profilePicValidator(
     //Some error occurred
     print(error);
   }
-}
-
-void getPdf(BuildContext context) async {
-  // // pick file
-  // FilePickerResult? result =
-  //     await FilePicker.platform.pickFiles(allowMultiple: false);
-  // File pick = File(result!.files.single.path.toString());
-  // var file = pick.readAsBytesSync();
-  // String name = 'resume.pdf';
-
-  // // Uploading file to firebase
-  // var pdfFile = FirebaseStorage.instance.ref().child('files').child(name);
-  // UploadTask task = pdfFile.putData(file);
-  // TaskSnapshot snapshot = await task;
-  // var url = await snapshot.ref.getDownloadURL();
-  // FirebaseStorage.instance.refFromURL(url).getData();
 }
